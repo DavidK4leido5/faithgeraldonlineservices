@@ -1,0 +1,42 @@
+# ---------------------------------------------------------------------------
+# Faith Gerald Online Services — repository ignores
+#
+# Plain static HTML/CSS/JS. No build step, no dependencies, so this file is
+# deliberately short. Everything the site needs to run is committed.
+# ---------------------------------------------------------------------------
+
+# --- Design source material -------------------------------------------------
+# The supplied reference poster and the original landing export. These are
+# inputs that produced assets/hero/hero-device.jpg and assets/brand/*, not
+# files the site loads. Kept on disk, out of the repo.
+design/
+
+# --- Impeccable tooling state -----------------------------------------------
+# Session and hook state only. PRODUCT.md and DESIGN.md ARE committed: they
+# are real project documentation, not session state.
+.impeccable/
+.impeccable-live.json
+.impeccable-live/
+
+# --- Local dev servers ------------------------------------------------------
+# The static preview server and any local tooling output.
+tools/*.local.*
+*.local.json
+*.local.css
+*.local.js
+
+# --- Editor / OS noise ------------------------------------------------------
+.vscode/
+.idea/
+*.swp
+*~
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# --- Logs and temp files ----------------------------------------------------
+*.log
+npm-debug.log*
+yarn-error.log*
+*.tmp
+*.temp
