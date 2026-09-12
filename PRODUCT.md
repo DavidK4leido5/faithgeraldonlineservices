@@ -2,7 +2,7 @@
 
 <!-- impeccable:product-schema 1 -->
 
-# Platform
+## Platform
 
 web
 
